@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web orientada a facilitar cálculos utilizados día a día por los profesionales de la salud, necesarios en la orientación clínica, diagnóstica y terapéutica">
+    <meta name="keywords" content="medicina, enfermería,médicos,enfermeros,escalas, dosis,infusión,neurología,uci,nefrología,metabolismo,masa corporal">
+    <title>Filtrado glomerular</title>
+    <link rel="stylesheet" href="../CSS/scores.css">
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/tfg.js"></script>
+    
+   
+    <link rel="stylesheet" href="">
+    <style>
+        @import url("");
+    </style>
+    <style>
+        @import url("");
+    </style>
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</head>
+
+<body class="fondo">
+
+    <Header>
+        
+    
+         <h1>
+          Ecuación Cockcroft-Gault.
+         </h1>
+
+         <div class="col-12 back">
+          <button type="submit" class="btn btn-primary" id=seleccion><a class="links" href="../index.html">Regresar</a></button>
+        </div>
+       
+    </Header>
+
+
+
+    <main> 
+
+          <div class="container-fluid">
+
+            <form class="row row-cols-lg-auto g-3 align-items-center" id="cDk">
+        
+                <div class="col-12">
+                    <label class="visually-hidden" for="creatinina">Creatinina</label>
+                    <div class="input-group">
+                      <div class="input-group-text">creatinina</div>
+                      <input type="text"  class="form-control" id="creatinina" placeholder="mg/dL">
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <label class="visually-hidden" for="peso">Peso</label>
+                    <div class="input-group">
+                      <div class="input-group-text">Peso</div>
+                      <input type="text" class="form-control" id="peso" placeholder="Kg">
+                    </div>
+                  </div>
+
+                <div class="col-12">
+                  <label class="visually-hidden" for="sexo">Sexo</label>
+                  <select class="form-select" id="sexo">
+                    <option selected>Sexo</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="visually-hidden" for="edad">Edad</label>
+                  <div class="input-group">
+                    <div class="input-group-text">Edad</div>
+                    <input type="text" class="form-control" id="edad" placeholder="Años">
+                  </div>
+                </div>
+                <div class="col-12" id="tasaFiltracion">
+                     
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" id=botonTfg>Calcular</button>
+                  <button type="submit" class="btn btn-primary" id=refrescar><a class="links" href="../scores/tfg.html">Refrescar</a></button>
+                </div>
+              </form>
+                    </div>
+
+                    <div id="alerta">
+                     
+
+                    </div>
+
+                   
+            </form>
+
+          </div>
+        
+         
+
+    </main>
+
+
+
+
+    <footer>
+
+
+
+    </footer>
+   
+</body>
+
+
+</html>

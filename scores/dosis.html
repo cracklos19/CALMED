@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web orientada a facilitar cálculos utilizados día a día por los profesionales de la salud, necesarios en la orientación clínica, diagnóstica y terapéutica">
+    <meta name="keywords" content="medicina, enfermería,médicos,enfermeros,escalas, dosis,infusión,neurología,uci,nefrología,metabolismo,masa corporal">
+
+    <title>Infusiones de medicamentos</title>
+    <link rel="stylesheet" href="../CSS/scores.css">
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        @import url("");
+    </style>
+    <style>
+        @import url("");
+    </style>
+  
+
+
+</head>
+
+<body>
+
+    <Header>
+        <div class=" container-fluid">
+            <h1 class="titulo">
+                Calculadora de infusiones
+            </h1>
+    
+            <span class=" back">
+                <button type="submit" class="btn btn-primary" id=><a class="links" href="../index.html">Regresar</a></button>
+            </span>
+           
+        </div>
+
+        <a href="../scores/dosis.html"></a>
+
+       
+         
+   
+       
+       
+    </Header>
+
+
+
+    <main> 
+        <form class=" row g-3 align-items-center" id="dosis">
+            
+            <div class="col-12">
+                <label class="visually-hidden" for="Principio activo">Principio activo</label>
+                <select class="form-select" id="activo">
+                  <option selected>Lista de fármacos</option>
+                  <option value="noradrenalina">Noradrenalina</option>
+                  <option value="midazolam">Midazolam</option>
+                  <option value="fentanilo">Fentanilo</option>
+                  <option value="atracurio">Atracurio</option>
+                  <option value="isoproterenol">Isoproterenol</option>
+                  <option value="nitroglicerina">Nitroglicerina</option>
+                </select>
+              </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id=seleccion>seleccionar</button>
+            </div>
+          </form>
+     
+        
+
+
+    </main>
+
+
+
+
+    <footer>
+
+        <div>
+            <h3 id="mensaje">
+              
+                          
+              
+            </h3>
+
+            <h4 id= "mensaje2"> 
+
+            </h4>
+          </div>
+
+    </footer>
+    <script src="../JS/dosis.js"></script>
+</body>
+
+</html>

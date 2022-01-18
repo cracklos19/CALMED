@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web orientada a facilitar cálculos utilizados día a día por los profesionales de la salud, necesarios en la orientación clínica, diagnóstica y terapéutica">
+    <meta name="keywords" content="medicina, enfermería,médicos,enfermeros,escalas, dosis,infusión,neurología,uci,nefrología,metabolismo,masa corporal">
+
+    <title>SOFA-Score</title>
+    <link rel="stylesheet" href="../CSS/scores.css">
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        @import url("");
+    </style>
+    <style>
+        @import url("");
+    </style>
+  
+
+
+</head>
+
+<body class="fondo">
+
+    <Header>
+        <div class=" container-fluid">
+            <h1 class="titulo">
+                Score SOFA.
+            </h1>
+    
+           
+            <div class="col-12 back">
+              <button type="submit" class="btn btn-primary" id=seleccion><a class="links" href="../index.html">Regresar</a></button>
+            </div>
+        </div>
+         
+     
+       
+       
+    </Header>
+
+
+
+    <main> 
+
+        <form class=" row" id="sofa">
+            <div class="col-3">
+              <label class="visually-hidden" for="paO2">paO2</label>
+              <div class="input-group">
+                <div class="input-group-text">paO2</div>
+                <input type="number" class="form-control" id="paO2" placeholder="80">
+              </div>
+            </div>
+
+            <div class="col-3">
+                <label class="visually-hidden" for="FIO2">FiO2</label>
+                <div class="input-group">
+                  <div class="input-group-text">FiO2</div>
+                  <input type="number" class="form-control" id="fiO2" placeholder="21">
+                </div>
+              </div>
+
+              <div class="col-3">
+                <label class="visually-hidden" for="plaquetas">Plaquetas</label>
+                <div class="input-group">
+                  <div class="input-group-text">Plaquetas</div>
+                  <input type="number" class="form-control" id="plaquetas" placeholder="200000">
+                </div>
+              </div>
+
+              <div class="col-3">
+                <label class="visually-hidden" for="Glasgow">Glasgow</label>
+                <div class="input-group">
+                  <div class="input-group-text">Glasgow</div>
+                  <input type="text" class="form-control" id="glasgow" placeholder="15">
+                </div>
+              </div>
+
+              <div class="col-6 ">
+                <label class="visually-hidden" for="Creatinina">Creatinina</label>
+                <div class="input-group">
+                  <div class="input-group-text">Creatinina</div>
+                  <input type="text" class="form-control" id="creatinina" placeholder="mg/dL">
+                  </div>
+              </div>
+
+              <div class="col-6 ">
+                <label class="visually-hidden" for="Bilirrubina">Bilirrubina</label>
+                <div class="input-group">
+                  <div class="input-group-text">Bilirrubina</div>
+                  <input type="text" class="form-control" id="bilirrubina" placeholder="mg/dL">
+                </div>
+                </div>
+
+              <div class="col-12 ">
+                <label class="visually-hidden" for="EstabilidadHemodinamica">Estabilidad Hemodinámica</label>
+                <select class="form-select" id="estabilidad">
+                  <option selected>Estabilidad Hemodinámica</option>
+                  <option value="0">Sin hipotensión</option>
+                  <option value="1">PAM < 70 </option>
+                  <option value="2">Dopamina </=5 o dobutamina</option>
+                  <option value="3">Dopamina >5 o norepinefrina </=0.1</option>
+                  <option value="4">Dopamina >15 o norepinefrina >0.1</option>
+                </select>
+              </div>
+          
+            <div class="col-12 boton">
+              <button type="submit" class="btn btn-primary" id=botonCalcMet>Calcular</button>
+              <button type="submit" class="btn btn-primary" id=refrescar><a class="links" href="../scores/sofa.html">Refrescar</a></button>
+            </div>
+          </form>
+
+    </main>
+
+
+
+
+    <footer>
+
+        <div>
+            <h3 id="mensaje">
+              
+                          
+              
+            </h3>
+
+            <p>Un incremento de la puntuación SOFA durante las primeras 48 horas tras el ingreso, predice una mortalidad superior al 49%</p>
+          </div>
+
+    </footer>
+    <script src="../JS/sofa.js"></script>
+</body>
+
+</html>

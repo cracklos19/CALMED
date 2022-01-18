@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web orientada a facilitar cálculos utilizados día a día por los profesionales de la salud, necesarios en la orientación clínica, diagnóstica y terapéutica">
+    <meta name="keywords" content="medicina, enfermería,médicos,enfermeros,escalas, dosis,infusión,neurología,uci,nefrología,metabolismo,masa corporal">
+
+    <title>calculadora metabólica</title>
+    <link rel="stylesheet" href="../CSS/scores.css">
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        @import url("");
+    </style>
+    <style>
+        @import url("");
+    </style>
+  
+
+
+</head>
+
+<body class="fondo">
+
+    <Header>
+        <div class=" container-fluid">
+            <h1 class="titulo">
+                Calculadora de IMC y tasa metabólica basal.
+            </h1>
+    
+            <div class="col-12 back">
+              <button type="submit" class="btn btn-primary" id=seleccion><a class="links" href="../index.html">Regresar</a></button>
+            </div>
+          
+        </div>
+         
+       
+       
+       
+    </Header>
+
+
+
+    <main> 
+
+        <form class="row row-cols-lg-auto g-3 align-items-center" id="calcMet">
+            <div class="col-12">
+              <label class="visually-hidden" for="nombre">nombre</label>
+              <div class="input-group">
+                <div class="input-group-text">Identificación</div>
+                <input type="text" class="form-control" id="nombre" placeholder="María Pérez">
+              </div>
+            </div>
+
+            <div class="col-12">
+                <label class="visually-hidden" for="edad">Edad</label>
+                <div class="input-group">
+                  <div class="input-group-text">Edad</div>
+                  <input type="number" class="form-control" id="edad" placeholder="Años">
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="visually-hidden" for="peso">Peso</label>
+                <div class="input-group">
+                  <div class="input-group-text">Peso</div>
+                  <input type="number" class="form-control" id="peso" placeholder="Kg">
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="visually-hidden" for="altura">Altura</label>
+                <div class="input-group">
+                  <div class="input-group-text">Altura</div>
+                  <input type="number" class="form-control" id="altura" placeholder="cm">
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="visually-hidden" for="nivelAct">Preference</label>
+                <select class="form-select" id="nivelAct">
+                  <option selected>Nivel de actividad física</option>
+                  <option value="bajo">Bajo</option>
+                  <option value="medio">Medio</option>
+                  <option value="alto">Alto</option>
+                </select>
+              </div>
+
+            <div class="col-12">
+              <label class="visually-hidden" for="sexo">Sexo</label>
+              <select class="form-select" id="sexo">
+                <option selected>Sexo</option>
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+              </select>
+            </div>
+          
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck">
+                  Los datos suministrados son correctos
+                </label>
+              </div>
+            </div>
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id=botonCalcMet>Calcular</button>
+              <button type="submit" class="btn btn-primary" id=refrescar><a class="links" href="../scores/metabolico.html">Refrescar</a></button>
+            </div>
+          </form>
+        
+<div>
+  <h3 id="mensaje">
+    
+                
+    
+  </h3>
+</div>
+
+    </main>
+
+
+
+
+    <footer>
+
+
+
+    </footer>
+    <script src="../JS/imc-met.js"></script>
+</body>
+
+</html>
