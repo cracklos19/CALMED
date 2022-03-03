@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web orientada a facilitar cálculos utilizados día a día por los profesionales de la salud, necesarios en la orientación clínica, diagnóstica y terapéutica">
+    <meta name="keywords" content="medicina, enfermería,médicos,enfermeros,escalas, dosis,infusión,neurología,uci,nefrología,metabolismo,masa corporal">
+
+    <title>BALANCE HÍDRICO</title>
+    <link rel="stylesheet" href="../CSS/scores.css">
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        @import url("");
+    </style>
+    <style>
+        @import url("");
+    </style>
+  
+
+
+</head>
+
+<body class="fondo">
+
+    <Header>
+        <div class=" container-fluid">
+            <h1 class="titulo">
+                Balance hídrico
+            </h1>
+    
+           
+            <div class="col-12 back">
+              <button type="submit" class="btn btn-primary" id=seleccion><a class="links" href="../index.html">Regresar</a></button>
+            </div>
+        </div>
+         
+     
+       
+       
+    </Header>
+
+
+
+    <main> 
+
+        <form class=" row" id="balance">
+
+            <h4>EGRESOS</h4>
+            <div class="col-3 ">
+                <label class="visually-hidden" for="pesoPaciente">Peso del paciente</label>
+                <div class="input-group">
+                  <div class="input-group-text">Peso del paciente</div>
+                  <input type="text" class="form-control" id="peso" placeholder="Kg">
+                </div>
+                </div>
+                <div class="col-3 ">
+                    <label class="visually-hidden" for="diuresis">diuresis</label>
+                    <div class="input-group">
+                      <div class="input-group-text">Diuresis del paciente</div>
+                      <input type="text" class="form-control" id="diuresis" placeholder="cc">
+                    </div>
+                    </div>
+
+                <div class="col-3 ">
+                    <label class="visually-hidden" for="drenajes">Drenajes</label>
+                    <div class="input-group">
+                      <div class="input-group-text">Gasto por drenajes</div>
+                      <input type="text" class="form-control" id="dren" placeholder="cc">
+                    </div>
+                    </div>
+
+                    <div class="col-3 ">
+                        <label class="visually-hidden" for="deposiciones">deposiciones</label>
+                        <div class="input-group">
+                          <div class="input-group-text">Deposiciones</div>
+                          <input type="text" class="form-control" id="depo" placeholder="cc">
+                        </div>
+                        </div>
+
+                <div class="col-9 ">
+                    <label class="visually-hidden" for="ventilacion">Ventilación</label>
+                    <select class="form-select" id="ventilacion">
+                      <option selected> Ventilación </option>
+                      <option value="0">No ventilado</option>
+                      <option value="1">Si, con frecuencia respiratoria menor a 25</option>
+                      <option value="2"> >Si, con frecuencia respiratoria 25-29 </option>
+                      <option value="3">>Si, con frecuencia respiratoria 30-34</option>
+                      <option value="4">>Si, con frecuencia respiratoria 35-39</option>
+                      <option value="5">>Si, con frecuencia respiratoria 40-44</option>
+                      <option value="6">>Tubo o traqueo en T</option>
+                    </select>
+                    <div class="col-7 ">
+                        <label class="visually-hidden" for="horasArm">HorasArm</label>
+                        <div class="input-group">
+                          <div class="input-group-text">Horas con arm o tubo en t </div>
+                          <input type="text" class="form-control" id="horasArm" placeholder="0-24">
+                        </div>
+                        </div>
+                  </div>
+                  </div>
+
+              
+
+              <div class="col-9 ">
+                <label class="visually-hidden" for="temperatura">Temperatura corporal</label>
+                <select class="form-select" id="tempe">
+                  <option selected>Temperatura corporal en celsius</option>
+                  <option value="0">< 38</option>
+                  <option value="1">38 a 39 </option>
+                  <option value="2"> >39 a 40 </option>
+                  <option value="3">>40 </option>
+                </select>
+                <div class="col-7 ">
+                    <label class="visually-hidden" for="horasFiebre">horasfiebre</label>
+                    <div class="input-group">
+                      <div class="input-group-text">Horas con temperatura mayor o igual a 38 celsius </div>
+                      <input type="text" class="form-control" id="horasFiebre" placeholder="0-24">
+                    </div>
+                    </div>
+              </div>
+
+              <h4>INGRESOS</h4>
+
+              <div class="col-6 ">
+                <label class="visually-hidden" for="viaEnteral">enteral</label>
+                <div class="input-group">
+                  <div class="input-group-text">Via enteral </div>
+                  <input type="text" class="form-control" id="enteral" placeholder="cc">
+                </div>
+                </div>
+          </div>
+
+          <div class="col-6 ">
+            <label class="visually-hidden" for="viaParenteral">Parenteral</label>
+            <div class="input-group">
+              <div class="input-group-text"> Via parenteral </div>
+              <input type="text" class="form-control" id="parenteral" placeholder="cc">
+            </div>
+            </div>
+      </div>
+
+          
+            <div class="col-12 boton">
+              <button type="submit" class="btn btn-primary" id=botonCalcMet>Calcular</button>
+              <button type="submit" class="btn btn-primary" id=refrescar><a class="links" href="../scores/sofa.html">Refrescar</a></button>
+            </div>
+          </form>
+
+    </main>
+
+
+
+
+    <footer>
+
+        <div>
+            <h3 id="mensaje">
+              
+                          
+              
+            </h3>
+
+            
+          </div>
+
+    </footer>
+    <script src="../JS/balance.js"></script>
+</body>
+
+</html>
