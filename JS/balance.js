@@ -95,7 +95,7 @@ balance.addEventListener("submit", (Event)=> {
     };
 
     function egresos(){
-        return ventilado()+febril()+(parseFloat(peso)*0.5)+parseFloat(depo)+parseFloat(dren)+parseFloat(diuresis)
+        return ventilado()+febril()+(parseFloat(peso*24)*0.5)+parseFloat(depo)+parseFloat(dren)+parseFloat(diuresis)
     };
 
     function ingresos(){
